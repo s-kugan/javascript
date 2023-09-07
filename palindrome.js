@@ -15,7 +15,11 @@ let palindrome = (word) => {
     return true;
   }
 
-  return false;
+  else {
+    return false;
+  }
+
+  
 };
 
 palindrome("madam");
