@@ -1,2 +1,2 @@
 # javascript
-This repo contains code examples for some programming-questions
+This repo contains code examples in javascript syntax for some programming-questions
