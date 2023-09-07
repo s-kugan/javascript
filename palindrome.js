@@ -11,15 +11,12 @@ let palindrome = (word) => {
     reversedtext += word[i];
   }
 
-  if (reversedtext == word) {
+  if (reversedtext === word) {
+    console.log("true");
     return true;
-  }
-
-  else {
+  } else {
     return false;
   }
-
-  
 };
 
 palindrome("madam");
