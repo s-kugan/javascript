@@ -9,12 +9,14 @@ let uniqarray = (duparray)=>{
     let uniqarray = [];
 
     for (let i=0;i<duparray.length;i++){
-        if (indexOf(duparray[i])==-1){
+        if (uniqarray.indexOf(duparray[i])==-1){
             uniqarray.push(duparray[i])
         }
     }
 
     console.log('uniqarray***',uniqarray);
+    return uniqarray;
+
 
 
 }
