@@ -14,9 +14,10 @@ let palindrome = (word) => {
   if (reversedtext === word) {
     console.log("true");
     return true;
-  } else {
-    return false;
   }
+
+  console.log("false");
+  return false;
 };
 
 palindrome("madam");
