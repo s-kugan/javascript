@@ -6,7 +6,7 @@
 
 
 
-/* let palindrome = async (word)=>{
+let palindrome = (word)=>{
 
 let reversedtext = "";
 
@@ -14,31 +14,19 @@ let reversedtext = "";
             reversedtext += word[i];
         }
 
-        console.log('reversedtext***',reversedtext);
-
-        if (reversedtext==word){
-            return true
+                if (reversedtext==word){
+            console.log('true***');
+            return true;
         }
 
-        return false;
-} */
+        else {
+            console.log('false****');
+            return false;
+        }
 
-let palindrome = async (text) => {
-    let reversedstring = "";
+        
+} 
 
-    for (let i = text.length - 1; i >= 0; i--){
-        reversedstring += text[i];
-    }
-
-    if (text == reversedstring) {
-        console.log('true');
-        return true
-    }
-    else {
-        console.log('false');
-        return false;
-    }
-}
 
 
 
