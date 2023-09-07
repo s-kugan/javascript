@@ -1,33 +1,21 @@
 /**********************************************************
- * This code will verify the given text is Palindrome or not 
+ * This code will verify the given text is Palindrome or not
  * If the given text is palindrome , It will return true
  * If thr given text is not palindrome, It will return false
  * *********************************************************/
 
+let palindrome = (word) => {
+  let reversedtext = "";
 
+  for (let i = word.length - 1; i >= 0; i--) {
+    reversedtext += word[i];
+  }
 
-let palindrome = (word)=>{
+  if (reversedtext == word) {
+    return true;
+  }
 
-let reversedtext = "";
+  return false;
+};
 
-        for (let i=word.length-1;i>=0;i--){
-            reversedtext += word[i];
-        }
-
-                if (reversedtext==word){
-            console.log('true***');
-            return true;
-        }
-
-        else {
-            console.log('false****');
-            return false;
-        }
-
-        
-} 
-
-
-
-
-palindrome('madam');
+palindrome("madam");
