@@ -26,17 +26,22 @@ Update the max length to be the current index minus the start index Return the m
 
 const findlongestSubstring = (str) => {
   let max = 0;
-  let start = 0;
-  let map = {};
+  let currString = "";
+  let char;
+  let pos;
 
   for (let i = 0; i < str.length; i++) {
-    if (map[str[i]] > start) {
-      start = map[str[i]];
-      map[str[i]] = i;
-      max = Math.max(max, i - start + 1);
+    char = str.charAt(i);
+    pos = currString.indexOf(char);
+    if (pos !== -1) {
+      currString = currString.substring(pos + 1);
     }
+    currString += char;
+    max = Math.max(max, currString.length);
   }
   return max;
 };
 
+console.log(findlongestSubstring("abcabcbb"));
+console.log(findlongestSubstring("bbbbb"));
 console.log(findlongestSubstring("pwwkew"));
