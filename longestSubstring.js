@@ -19,7 +19,7 @@ Explanation: The answer is "wke", with the length of 3.
 Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
 *****************************************************************************************/
 
-/****************************answer*************************************************************************
+/****************************solution*************************************************************************
 Iterate through the string, if the character is already in the map, update the start index to the value of the character in the map
 Update the max length to be the current index minus the start index Return the max length
 ******************************************************************************************************************/
