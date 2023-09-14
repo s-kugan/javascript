@@ -19,7 +19,7 @@ const mergeTwoSortedArrays = (arr1, arr2) => {
     arr1.push(arr2[i]);
   }
 
-  for (i = 0; i < arr1.length; i++) {
+  for (i = 0; i < arr1.length; i++)
     for (let j = i + 1; j < arr1.length; j++) {
       if (arr1[i] > arr1[j]) {
         let temp = arr1[i];
@@ -27,7 +27,6 @@ const mergeTwoSortedArrays = (arr1, arr2) => {
         arr1[j] = temp;
       }
     }
-  }
 
   return arr1;
 };
