@@ -26,8 +26,6 @@ const findsubarray = () => {
       newarray.push[arr[i]];
     }
   }
-
-  console.log(newarray.length);
 };
 
-findsubarray();
+console.log(findsubarray());
