@@ -15,15 +15,18 @@ Explanation: Subarrays : arr[0…2], arr[2…4] have a sum exactly equal to 33.
 let arr = [10, 2, -2, -20, 10];
 let k = -10;
 let sum = 0;
-let newarray = [];
-let no;
+let num = 0;
 
 const findsubarray = () => {
   for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
+    for (let j = i; j < arr.length; j++) {
+      // calculate the required sum
+      sum += arr[j];
 
-    if (sum == k) {
-      newarray.push[arr[i]];
+      // check if sum is equal to previous sum
+      if (sum == k) {
+        num++;
+      }
     }
   }
 };
