@@ -29,6 +29,8 @@ const findsubarray = () => {
       }
     }
   }
+
+  return num;
 };
 
 console.log(findsubarray());
